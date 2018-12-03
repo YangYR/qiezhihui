@@ -1,0 +1,539 @@
+.wrap {
+  width: 1210px;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px; }
+  .header .wrap {
+    position: relative; }
+  .header .logo {
+    float: left;
+    padding-top: 13px; }
+  .header .nav {
+    padding-left: 190px;
+    float: left; }
+    .header .nav ul li {
+      display: inline-block;
+      position: relative; }
+      .header .nav ul li a {
+        display: block;
+        color: #333;
+        font-size: 16px;
+        padding-right: 40px; }
+      .header .nav ul li a:hover {
+        color: #3CAA5A; }
+  .header form {
+    height: 30px; }
+    .header form ul {
+      float: left;
+      margin-top: 10px;
+      margin-left: 40px;
+      position: relative; }
+      .header form ul li {
+        float: left;
+        position: relative; }
+    .header form li.searchPart {
+      width: 30px;
+      overflow: hidden;
+      height: 30px;
+      position: absolute !important;
+      top: 18px;
+      right: -110px;
+      transition: width 0.7s;
+      -webkit-transition: width 0.7s;
+      -ms-transition: width 0.7s;
+      -moz-transition: width 0.7s; }
+      .header form li.searchPart .search {
+        float: left;
+        background: #F2F2F2 url("../shouye/search.png") no-repeat center center;
+        border: none;
+        outline: none;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: width 0.7s;
+        -webkit-transition: width 0.7s;
+        -moz-transition: width 0.7s;
+        -ms-transition: width 0.7s;
+        position: absolute;
+        z-index: 999; }
+      .header form li.searchPart .content {
+        outline: none;
+        width: 150px;
+        height: 30px;
+        background: #fff;
+        border: none;
+        border-radius: 75px;
+        font-size: 14px;
+        color: #999999;
+        padding-left: 30px;
+        float: left; }
+    .header form li.searchPart.active {
+      width: 183px;
+      transition: width 0.7s;
+      -webkit-transition: width 0.7s;
+      -ms-transition: width 0.7s; }
+  .header .handle {
+    width: 85px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .header .handle a {
+      color: #333;
+      font-size: 16px; }
+    .header .handle a:hover {
+      color: #3CAA5A; }
+    .header .handle a.login {
+      padding-right: 15px; }
+
+.banner {
+  width: 100%;
+  height: 680px;
+  position: relative; }
+
+.img li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; }
+
+.banner .num {
+  position: absolute;
+  top: 645px;
+  left: 50%;
+  margin-left: -30px; }
+
+.banner .num li {
+  background-color: #ddd;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 4px; }
+
+.banner .num li.active {
+  background-color: #3CAA5A; }
+
+.banner .btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -85px;
+  width: 40px;
+  height: 140px;
+  background-color: #0E0E0E;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+  font-size: 30px;
+  opacity: 0.7; }
+
+.banner:hover .btn {
+  display: block; }
+
+.banner .left {
+  left: 0;
+  background: #0E0E0E url("../shouye/left.png") no-repeat center center; }
+
+.banner .right {
+  right: 0;
+  background: #0E0E0E url("../shouye/right.png") no-repeat center center; }
+
+.img a img {
+  width: 100%;
+  height: 680px; }
+
+.part1 {
+  width: 100%;
+  min-height: 490px;
+  background: url("../shouye/bg1.png");
+  padding-top: 45px; }
+  .part1 h4 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal; }
+  .part1 p {
+    font-size: 16px;
+    font-family: Arial;
+    color: #999999;
+    text-align: center;
+    padding-top: 15px; }
+  .part1 .img-group {
+    padding-top: 45px; }
+    .part1 .img-group li {
+      display: inline-block;
+      margin-right: 1px;
+      position: relative;
+      height: 276px; }
+      .part1 .img-group li .img-desc {
+        position: absolute;
+        top: 63px;
+        left: 50%;
+        color: #fff;
+        z-index: 99; }
+        .part1 .img-group li .img-desc .number {
+          font-family: Arial;
+          font-size: 36px;
+          margin-left: 7px; }
+        .part1 .img-group li .img-desc .text {
+          letter-spacing: 3px;
+          font-size: 18px;
+          padding: 10px 0; }
+        .part1 .img-group li .img-desc .line {
+          width: 40px;
+          border-bottom: 3px solid #fff; }
+        .part1 .img-group li .img-desc .introduction {
+          color: #fff;
+          font-size: 14px;
+          padding-left: 0px;
+          position: absolute;
+          z-index: 999;
+          width: 200px;
+          left: -80px;
+          top: 115px;
+          display: none; }
+    .part1 .img-group li.active {
+      background: #3BAA5A; }
+    .part1 .img-group .l1 {
+      width: 357px;
+      background: url("../shouye/tu1.png") no-repeat; }
+    .part1 .img-group .l2 {
+      width: 280px;
+      background: url("../shouye/tu2.png") no-repeat; }
+    .part1 .img-group .l3 {
+      width: 280px;
+      background: url("../shouye/tu3.png") no-repeat; }
+    .part1 .img-group .l4 {
+      width: 280px;
+      background: url("../shouye/tu4.png") no-repeat; }
+
+.part2 {
+  width: 100%;
+  background: url("../shouye/bg3.jpg");
+  min-height: 800px;
+  padding-top: 50px; }
+  .part2 h4 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: normal; }
+  .part2 p {
+    font-family: Arial;
+    font-size: 16px;
+    text-align: center;
+    color: #999999; }
+  .part2 .video {
+    margin-top: 40px;
+    position: relative; }
+    .part2 .video .sp {
+      display: none;
+      width: 760px;
+      height: 342px;
+      position: relative; }
+      .part2 .video .sp .open {
+        background: url("../shouye/open.png") no-repeat;
+        display: inline-block;
+        width: 92px;
+        height: 92px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; }
+      .part2 .video .sp .cover {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        width: 760px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 14px;
+        padding-left: 17px;
+        height: 40px;
+        line-height: 40px; }
+    .part2 .video .sp.active {
+      display: inline-block; }
+    .part2 .video .text {
+      background: url("../shouye/bg4.png") no-repeat;
+      display: inline-block;
+      height: 342px;
+      width: 503px;
+      position: absolute;
+      right: 8px;
+      padding: 65px 55px 85px 115px; }
+      .part2 .video .text .small-title {
+        font-size: 24px;
+        color: #666666;
+        padding-bottom: 35px; }
+      .part2 .video .text .video-content div {
+        font-size: 14px;
+        color: #666666;
+        line-height: 27px; }
+  .part2 .help-group {
+    margin-top: 20px; }
+    .part2 .help-group li {
+      display: inline-block;
+      width: 387px;
+      height: 253px;
+      margin-right: 15px;
+      position: relative; }
+      .part2 .help-group li a {
+        display: inline-block;
+        width: 387px;
+        height: 253px;
+        border: 3px solid transparent; }
+        .part2 .help-group li a .cover1 {
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          height: 50px;
+          line-height: 50px;
+          font-size: 14px;
+          background: #EEEEEE;
+          padding-left: 30px;
+          width: 382px;
+          color: #333; }
+      .part2 .help-group li a.active {
+        border: 3px solid #3CAA5A; }
+      .part2 .help-group li a.active span {
+        background: #3CAA5A;
+        color: #fff; }
+    .part2 .help-group li.l3 {
+      margin-right: 0; }
+
+.part3 {
+  width: 100%;
+  min-height: 540px;
+  background: url("../shouye/bg2.png");
+  padding-top: 50px; }
+  .part3 h4 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: normal; }
+  .part3 p {
+    font-family: Arial;
+    font-size: 16px;
+    text-align: center;
+    color: #999999; }
+  .part3 .list {
+    margin-top: 40px;
+    padding: 0 60px; }
+    .part3 .list > li {
+      display: inline-block;
+      text-align: center; }
+      .part3 .list > li .list-item li {
+        padding-bottom: 10px; }
+      .part3 .list > li .list-item a {
+        font-size: 14px; }
+      .part3 .list > li .list-item a:hover {
+        text-decoration: underline; }
+      .part3 .list > li .list-title {
+        padding-top: 12px; }
+        .part3 .list > li .list-title span {
+          font-size: 18px;
+          color: #fff; }
+      .part3 .list > li a {
+        color: #fff; }
+    .part3 .list .l1 {
+      background: url("../shouye/product1.png") no-repeat;
+      width: 254px;
+      height: 231px;
+      margin-right: 140px; }
+      .part3 .list .l1 .list-title {
+        padding-bottom: 30px; }
+    .part3 .list .l2 {
+      background: url("../shouye/product2.png") no-repeat;
+      width: 295px;
+      height: 274px;
+      margin-right: 120px; }
+      .part3 .list .l2 .list-title {
+        padding-bottom: 35px; }
+    .part3 .list .l3 {
+      background: url("../shouye/product3.png") no-repeat;
+      width: 254px;
+      height: 231px;
+      position: relative;
+      top: -47px; }
+      .part3 .list .l3 .list-title {
+        padding-bottom: 45px; }
+
+.part4 {
+  min-height: 460px;
+  padding-top: 70px;
+  background: url("../shouye/bg5.png"); }
+  .part4 h4 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: normal; }
+  .part4 p {
+    font-family: Arial;
+    font-size: 16px;
+    text-align: center;
+    color: #999999; }
+  .part4 .steps {
+    padding-top: 45px;
+    padding-right: 85px; }
+    .part4 .steps li {
+      display: inline-block;
+      padding-left: 130px;
+      position: relative; }
+      .part4 .steps li a {
+        display: inline-block; }
+      .part4 .steps li a:hover .info {
+        color: #3CAA5A; }
+      .part4 .steps li span {
+        display: inline-block;
+        width: 88px;
+        height: 88px; }
+      .part4 .steps li .info {
+        color: #fff;
+        padding-top: 25px;
+        padding-left: 15px; }
+    .part4 .steps .step1 span {
+      background: url("../shouye/1.png"); }
+    .part4 .steps .step1 .info {
+      padding-left: 0; }
+    .part4 .steps .step1 a:hover span {
+      background: url("../shouye/qiezhi_write.png"); }
+    .part4 .steps .step2 span {
+      background: url("../shouye/2.png"); }
+    .part4 .steps .step2 a:hover span {
+      background: url("../shouye/hover2.png"); }
+    .part4 .steps .step3 span {
+      background: url("../shouye/3.png"); }
+    .part4 .steps .step3 a:hover span {
+      background: url("../shouye/qiezhi_info.png"); }
+    .part4 .steps .step4 span {
+      background: url("../shouye/4.png"); }
+    .part4 .steps .step4 a:hover span {
+      background: url("../shouye/qiezhi_item.png"); }
+    .part4 .steps .step5 span {
+      background: url("../shouye/5.png"); }
+    .part4 .steps .step5 a:hover span {
+      background: url("../shouye/qiezhi_refer.png"); }
+    .part4 .steps .nextArrow {
+      display: inline-block;
+      background: url("../shouye/nextArrow.png");
+      width: 20px;
+      height: 24px;
+      position: absolute;
+      top: 35px;
+      left: 280px; }
+  .part4 .submit {
+    text-align: center;
+    padding-top: 65px; }
+    .part4 .submit button {
+      outline: none;
+      border: 1px solid #3CAA5A;
+      color: #3CAA5A;
+      text-align: center;
+      width: 160px;
+      height: 45px;
+      line-height: 45px;
+      border-radius: 5px;
+      background: transparent;
+      font-size: 16px;
+      cursor: pointer; }
+    .part4 .submit button:hover {
+      background: #3CAA5A;
+      color: #fff; }
+
+.footer {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  background: #222324;
+  color: #FEFFFF; }
+  .footer .footer-nav {
+    float: left; }
+    .footer .footer-nav li {
+      display: inline-block;
+      padding-right: 30px; }
+      .footer .footer-nav li a {
+        color: #999999;
+        font-size: 14px; }
+  .footer .copyright {
+    color: #999999;
+    font-size: 14px; }
+    .footer .copyright span {
+      padding-left: 20px; }
+
+.service-banner {
+  width: 100%;
+  background: url("../fuwuanli/banner.png");
+  height: 360px; }
+
+.service-content .service-item {
+  padding-top: 20px; }
+  .service-content .service-item a {
+    display: inline-block;
+    color: #666666;
+    font-size: 14px;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center; }
+  .service-content .service-item a.active {
+    background: #3BAA5A;
+    color: #fff; }
+.service-content .detail {
+  padding-top: 85px;
+  padding-bottom: 280px; }
+  .service-content .detail .tupian {
+    float: left;
+    background: url("../fuwuanli/9.png") no-repeat;
+    width: 595px;
+    height: 453px; }
+  .service-content .detail .wenzi {
+    float: left;
+    padding: 30px 0 30px 50px;
+    width: 550px; }
+    .service-content .detail .wenzi .panel {
+      min-height: 400px;
+      width: 550px;
+      position: relative;
+      overflow: hidden;
+      padding-right: 20px; }
+      .service-content .detail .wenzi .panel .item-title {
+        font-size: 18px;
+        color: #3BAA5A;
+        padding-bottom: 30px; }
+      .service-content .detail .wenzi .panel .item {
+        font-size: 14px;
+        line-height: 35px; }
+    .service-content .detail .wenzi .line {
+      width: 88px;
+      border-bottom: 3px solid #3BAA5A;
+      padding-top: 12px;
+      margin-bottom: 10px; }
+
+#returntop {
+  background: url("../shouye/top.png") -64px no-repeat;
+  width: 58px;
+  height: 56px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+  cursor: pointer; }
+
+#returntop:hover {
+  background: url("../shouye/top.png") 0 0 no-repeat; }
+
+/*# sourceMappingURL=index.css.map */

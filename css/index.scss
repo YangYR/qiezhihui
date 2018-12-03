@@ -1,0 +1,360 @@
+@charset "UTF-8";
+.wrap{
+  width: 1210px;
+  margin: 0 auto;
+}
+.header{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  .wrap{position: relative;}
+  .logo{
+    float: left;
+    padding-top: 13px;
+  }
+  .nav{
+    padding-left: 190px;
+    float: left;
+    ul{
+      li{
+        display: inline-block;
+        position: relative;
+        a{
+          display: block;
+          color: #333;
+          font-size:16px;
+          padding-right: 40px;
+        }
+        a:hover{color: #3CAA5A}
+      }
+    }
+  }
+  //form
+  form{
+    height: 30px;
+    ul{
+      float: left;
+      margin-top: 10px;
+      margin-left: 40px;
+      position: relative;
+      li{
+        float: left;
+        position: relative;
+      }
+    }
+    li.searchPart{
+      width: 30px;
+      overflow: hidden;
+      height: 30px;
+      position: absolute !important;
+      top: 18px;
+      right: -110px;
+      transition: width 0.7s;
+      -webkit-transition: width 0.7s;
+      -ms-transition:width 0.7s;
+      -moz-transition: width 0.7s;
+      .search{
+        float: left;
+        background:#F2F2F2 url("../shouye/search.png") no-repeat center center;
+        border: none;
+        outline: none;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: width 0.7s;
+        -webkit-transition:width 0.7s;
+        -moz-transition: width 0.7s;
+        -ms-transition:width 0.7s;
+        position: absolute;
+        z-index: 999;
+      }
+      .content{
+        outline: none;
+        width: 150px;
+        height: 30px;
+        background: #fff;
+        border: none;
+        border-radius: 75px;
+        font-size: 14px;
+        color: #999999;
+        padding-left: 30px;
+        float: left;
+      }
+    }
+    li.searchPart.active{
+      width: 183px;
+      transition: width 0.7s;
+      -webkit-transition: width 0.7s;
+      -ms-transition:width 0.7s;
+    }
+  }
+  .handle{
+    width: 85px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    a{
+      color: #333;
+      font-size:16px;
+    }
+    a:hover{color: #3CAA5A}
+    a.login{padding-right: 15px}
+  }
+}
+//lunbotu
+.banner{width: 100%;height:680px;position: relative;}
+.img li{position: absolute;top:0;left: 0;display: none;}
+.banner .num{position: absolute;top:645px;left: 50%;margin-left: -30px;}
+.banner .num li{background-color: #ddd;color:#fff;width: 15px;height: 15px;display: inline-block;text-align: center;line-height: 20px;border-radius: 50%;cursor: pointer;margin: 4px;}
+.banner .num li.active{background-color: #3CAA5A;}
+.banner .btn{position: absolute;top:50%;margin-top:-85px;width: 40px;height: 140px;background-color: #0E0E0E;color:#fff;text-align: center;line-height: 80px;cursor: pointer;display: none;font-size: 30px;opacity: 0.7;}
+.banner:hover .btn{display: block;}
+.banner .left{left:0;background:#0E0E0E url("../shouye/left.png") no-repeat center center;}
+.banner .right{right:0;background:#0E0E0E url('../shouye/right.png') no-repeat center center;}
+.img a img{width: 100%;height:680px;}
+//part1
+.part1{
+  width: 100%;
+  min-height: 490px;
+  background: url("../shouye/bg1.png");
+  padding-top: 45px;
+  h4{
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+  }
+  p{
+    font-size: 16px;
+    font-family: Arial;
+    color: #999999;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .img-group{padding-top: 45px;
+    li{
+      display: inline-block;
+      margin-right: 1px;
+      position: relative;
+      height: 276px;
+      .img-desc{
+        position: absolute;
+        top: 63px;
+        left: 50%;
+        color: #fff;
+        z-index: 99;
+        .number{font-family: Arial;font-size: 36px;margin-left: 7px}
+        .text{letter-spacing:3px;font-size: 18px;padding: 10px 0}
+        .line{width: 40px;border-bottom: 3px solid #fff}
+        .introduction{
+          color: #fff;
+          font-size: 14px;
+          padding-left: 0px;
+          position: absolute;
+          z-index: 999;
+          width: 200px;
+          left: -80px;
+          top: 115px;
+          display: none;
+        }
+      }
+    }
+    li.active{background:#3BAA5A;}
+    .l1{
+      width: 357px;
+      background: url("../shouye/tu1.png") no-repeat;
+    }
+    .l2{
+      width: 280px;
+      background: url("../shouye/tu2.png") no-repeat;
+    }
+    .l3{
+      width: 280px;
+      background: url("../shouye/tu3.png") no-repeat;
+    }
+    .l4{
+      width: 280px;
+      background: url("../shouye/tu4.png") no-repeat;
+    }
+  }
+}
+.part2{
+  width: 100%;
+  background: url("../shouye/bg3.jpg");
+  min-height: 800px;
+  padding-top: 50px;
+  h4{font-size: 24px;color: #fff;text-align: center;padding-bottom: 10px;font-weight: normal}
+  p{font-family: Arial;font-size: 16px;text-align: center;color: #999999}
+  .video{
+    margin-top: 40px;
+    position: relative;
+    .sp{display: none;width: 760px;height: 342px;position: relative;
+    .open{background: url('../shouye/open.png') no-repeat;display: inline-block;width: 92px;height: 92px;position:absolute;left:0;top:0;right:0;bottom:0;margin:auto;}
+      .cover{display: inline-block;position: absolute;bottom: 0;width: 760px;background: rgba(0,0,0,.5);color: #fff;font-size: 14px;padding-left: 17px;height: 40px;line-height: 40px}
+    }
+    .sp.active{display: inline-block}
+    .text{background: url('../shouye/bg4.png') no-repeat;display: inline-block;height: 342px;width: 503px;position: absolute;right: 8px;padding: 65px 55px 85px 115px;
+  .small-title{font-size: 24px;color: #666666;padding-bottom: 35px}
+  .video-content{div{font-size: 14px;color: #666666;line-height: 27px}}
+    }
+  }
+  .help-group{
+    margin-top: 20px;
+    li{display:inline-block;width: 387px;height: 253px;margin-right: 15px;position: relative;
+    a{
+      display: inline-block;width: 387px;height: 253px;border: 3px solid transparent;
+      .cover1{
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        background: #EEEEEE;
+        padding-left: 30px;
+        width: 382px;
+        color: #333;
+      }
+    }
+    a.active{border:3px solid #3CAA5A}
+    a.active span{background: #3CAA5A;color: #fff}
+    }
+    li.l3{margin-right: 0}
+  }
+}
+.part3{
+  width: 100%;
+  min-height: 540px;
+  background: url("../shouye/bg2.png");
+  padding-top: 50px;
+  h4{font-size: 24px;color: #333;text-align: center;padding-bottom: 15px;font-weight: normal}
+  p{font-family: Arial;font-size: 16px;text-align: center;color: #999999}
+  .list{
+    margin-top: 40px;
+    padding:0 60px;
+    >li{
+      display: inline-block;
+      text-align: center;
+      .list-item{
+        li{padding-bottom: 10px}
+        a{font-size: 14px}
+        a:hover{text-decoration: underline;}
+      }
+      .list-title{
+        padding-top: 12px;
+        span{font-size: 18px;color: #fff}
+      }
+      a{color: #fff}
+    }
+    .l1{background:url('../shouye/product1.png') no-repeat;width: 254px;height: 231px;margin-right: 140px;
+      .list-title{
+        padding-bottom: 30px;
+      }
+    }
+    .l2{background:url('../shouye/product2.png') no-repeat;width: 295px;height: 274px;margin-right: 120px;
+      .list-title{
+        padding-bottom: 35px;
+      }
+    }
+    .l3{background:url('../shouye/product3.png') no-repeat;width: 254px;height: 231px;position: relative;top: -47px;
+      .list-title{
+        padding-bottom: 45px;
+      }
+    }
+  }
+}
+.part4{
+  min-height: 460px;padding-top: 70px;background: url("../shouye/bg5.png");
+  h4{font-size: 24px;color: #fff;text-align: center;padding-bottom: 10px;font-weight: normal}
+  p{font-family: Arial;font-size: 16px;text-align: center;color: #999999}
+  .steps{
+    padding-top: 45px;
+    padding-right: 85px;
+    li{
+      display: inline-block;
+      padding-left: 130px;
+      position: relative;
+      a{display: inline-block}
+      a:hover{.info{color: #3CAA5A}}
+      span{display: inline-block;width: 88px;height: 88px;}
+      .info{color: #fff;padding-top: 25px;padding-left: 15px}
+    }
+    .step1{span{background: url("../shouye/1.png");}.info{padding-left: 0} a:hover{span{background: url("../shouye/qiezhi_write.png");}}}
+    .step2{span{background: url("../shouye/2.png");} a:hover{span{background: url("../shouye/hover2.png");}}}
+    .step3{span{background: url("../shouye/3.png");} a:hover{span{background: url("../shouye/qiezhi_info.png");}}}
+    .step4{span{background: url("../shouye/4.png");} a:hover{span{background: url("../shouye/qiezhi_item.png");}}}
+    .step5{span{background: url("../shouye/5.png");} a:hover{span{background: url("../shouye/qiezhi_refer.png");}}}
+
+    .nextArrow{display: inline-block;background: url("../shouye/nextArrow.png");width: 20px;height: 24px;position: absolute;top: 35px;left: 280px}
+  }
+  .submit{text-align: center;padding-top: 65px;button{outline: none;
+    border: 1px solid #3CAA5A;color: #3CAA5A;text-align: center;width: 160px;height: 45px;line-height: 45px;border-radius: 5px;background: transparent;font-size: 16px;cursor: pointer}button:hover{background: #3CAA5A;color: #fff}}
+}
+.footer{
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  background: #222324;
+  color: #FEFFFF;
+  .footer-nav{float:left;li{
+    display: inline-block;
+    padding-right: 30px;
+    a{color: #999999;font-size: 14px}
+  }}
+  .copyright{color: #999999;font-size: 14px;span{padding-left: 20px;}}
+}
+//服务案例
+.service-banner{
+  width: 100%;
+  background: url("../fuwuanli/banner.png");
+  height: 360px;
+}
+.service-content{
+  .service-item{
+    padding-top: 20px;
+    a{
+      display: inline-block;
+      color: #666666;
+      font-size: 14px;
+      width: 110px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+    a.active{background: #3BAA5A;color: #fff}
+  }
+  .detail{
+    padding-top: 85px;
+    padding-bottom: 280px;
+    .tupian{
+      float: left;
+      background: url("../fuwuanli/9.png") no-repeat;
+      width: 595px;
+      height: 453px;
+    }
+    .wenzi{
+      float: left;
+      padding: 30px 0 30px 50px;
+      width: 550px;
+    .panel{min-height: 400px;width: 550px;position: relative;overflow: hidden;padding-right: 20px;
+      .item-title{font-size: 18px;color: #3BAA5A;padding-bottom: 30px}
+      .item{font-size: 14px;line-height: 35px}
+    }
+      .line{width: 88px;border-bottom: 3px solid #3BAA5A;padding-top: 12px;margin-bottom: 10px}
+    }
+  }
+}
+//返回顶部
+#returntop{
+  background:url("../shouye/top.png") -64px no-repeat;
+  width:58px;
+  height:56px;
+  position:fixed;
+  top:0px;
+  left:0px;
+  display:none;
+  cursor:pointer;
+}
+#returntop:hover{background:url("../shouye/top.png") 0 0 no-repeat;}
